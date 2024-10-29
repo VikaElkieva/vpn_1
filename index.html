@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Fast Net Club</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.7); }
+            50% { box-shadow: 0px 0px 60px rgba(0, 255, 255, 1); }
+            100% { box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.7); }
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 0 0 20px;
+        }
+        .highlight {
+            color: #00ffff;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #141e30;
+            background-color: #00ffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #33ccff;
+            color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+        }
+        .disclaimer {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: #ccc;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Secret Fast Net Club</h1>
+        <p>
+            Welcome, <span class="highlight">Seeker</span>.<br>
+            You've found the <span class="highlight">gateway</span> to a faster, more secure browsing experience.
+        </p>
+        <p>
+            This is not just another network. This is a <span class="highlight">private, exclusive</span> club for the fastest and most secure connections.
+        </p>
+        <p>
+            If you think you are <span class="highlight">worthy</span>, press below to get your <span class="highlight">access key</span>.
+        </p>
+        <button class="button" onclick="downloadVPN()">Get Access Key</button>
+        <p class="disclaimer">Only for true seekers of speed.</p>
+    </div>
+
+    <script>
+        function downloadVPN() {
+            window.location.href = 'https://example.com';
+        }
+    </script>
+</body>
+</html>
